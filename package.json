@@ -2,7 +2,7 @@
   "fitbit": {
     "appUUID": "59694ec5-dcb4-42ce-935e-18eee393d7e3",
     "appType": "clockface",
-    "appDisplayName": "PipBoy",
+    "appDisplayName": "FitBoy",
     "iconFile": "resources/icon.png",
     "wipeColor": "",
     "requestedPermissions": [
@@ -11,12 +11,11 @@
       "access_heart_rate"
     ],
     "buildTargets": [
-      "higgs",
       "meson"
     ],
     "i18n": {
       "en": {
-        "name": "PipBoy"
+        "name": "FitBoy"
       }
     }
   },

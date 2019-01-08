@@ -1,6 +1,7 @@
 <svg class="background">
   <text id="myLabel" />
   
+  <!-- Scanlines -->
   <rect x="0%" y="2%" width="100%" height="2%" fill="#01270E"  />
   <rect x="0%" y="6%" width="100%" height="2%" fill="#01270E" />
   <rect x="0%" y="10%" width="100%" height="2%" fill="#01270E" />
@@ -42,25 +43,26 @@
   <rect x="72%" y="5%" width="2" height="10%" fill="#17E268" opacity="0.75" />
   <rect x="53%" y="5%" width="2" height="10%" fill="#17E268" opacity="0.75" />
   
-  <rect x="53%" y="20%" width="2" height="70%" fill="#17E268" opacity="0.25" />
+  <!-- More Transparent Borders -->
+  <rect x="53%" y="17%" width="2" height="43%" fill="#17E268" opacity="0.25" />
   
   <!-- Date Border -->
   <rect x="95%" y="39%" width="2" height="10%" fill="#17E268" opacity="0.75" />
   <rect x="55%" y="39%" width="40%" height="2" fill="#17E268" opacity="0.75" />
   
   <!-- Progress Bars (Unfilled) -->
-  <rect x="60%" y="60%" height="16" width="100" fill="#17E268" opacity="0.2" />
-  <rect x="60%" y="68%" height="16" width="100" fill="#17E268" opacity="0.25" />
-  <rect x="60%" y="76%" height="16" width="100" fill="#17E268" opacity="0.25" />
-  <rect x="60%" y="84%" height="16" width="100" fill="#17E268" opacity="0.25" />
-  <rect x="12%" y="60%" height="32" width="100" fill="#17E268" opacity="0.25" />
+  <rect x="16%" y="62%" height="16" width="215" fill="#17E268" opacity="0.2" />
+  <rect x="16%" y="70%" height="16" width="215" fill="#17E268" opacity="0.25" />
+  <rect x="16%" y="78%" height="16" width="215" fill="#17E268" opacity="0.25" />
+  <rect x="16%" y="86%" height="16" width="215" fill="#17E268" opacity="0.25" />
+  <rect x="13%" y="46%" height="32" width="100" fill="#17E268" opacity="0.25" />
   
   <!-- Progress Bars (Filled) -->
-  <rect id="calProgressBar" x="60%" y="60%" height="16" fill="#17E268" opacity="0.75" />
-  <rect id="activeProgressBar" x="60%" y="68%" height="16" fill="#17E268" opacity="0.75" />
-  <rect id="distProgressBar" x="60%" y="76%" height="16" fill="#17E268" opacity="0.75" />
-  <rect id="stairsProgressBar" x="60%" y="84%" height="16" fill="#17E268" opacity="0.75" />
-  <rect id="batteryBar" x="12%" y="60%" height="32" fill="#17E268" opacity="0.75" />
+  <rect id="calProgressBar" x="16%" y="62%" height="16" fill="#17E268" opacity="0.75" />
+  <rect id="activeProgressBar" x="16%" y="70%" height="16" fill="#17E268" opacity="0.75" />
+  <rect id="distProgressBar" x="16%" y="78%" height="16" fill="#17E268" opacity="0.75" />
+  <rect id="stairsProgressBar" x="16%" y="86%" height="16" fill="#17E268" opacity="0.75" />
+  <rect id="batteryBar" x="13%" y="46%" height="32" fill="#17E268" opacity="0.75" />
   
   <!-- Data [DRAW LAST] -->
   <text id="clockTime" />
@@ -69,14 +71,16 @@
   <text id="todayMonth" />
   <text id="todayDate" />
   <text id="hrate"     />
-  <image href="hrate.png" width="16" height="16" x="56%" y="8%"  fill="#17E268" opacity="0.75"/>
+  <image id="heartIcon" href="hrate.png" width="16" height="16" x="56%" y="8%"  fill="#17E268" opacity="0.75"/>
   <text id="steps"     />
   <image href="steps.png" width="16" height="16" x="75%" y="8%"  fill="#17E268" opacity="0.75"/>
   <text id="battery"   />
-  <image href="cals.png" width="16" height="16" x="54%" y="60%"  fill="#17E268" opacity="0.75"/>
-  <image href="active.png" width="16" height="16" x="54%" y="68%"  fill="#17E268" opacity="0.75"/>
-  <image href="dist.png" width="16" height="16" x="54%" y="76%"  fill="#17E268" opacity="0.75"/>
-  <image href="stairs.png" width="16" height="16" x="54%" y="84%"  fill="#17E268" opacity="0.75"/>
-  <image href="stats.png" width="128" height="128" x="8%" y="16%"  fill="#17E268" opacity="0.75"/>
+  <image href="cals.png" width="16" height="16" x="9%" y="62%"  fill="#17E268" opacity="0.75"/>
+  <image href="active.png" width="16" height="16" x="9%" y="70%"  fill="#17E268" opacity="0.75"/>
+  <image href="dist.png" width="16" height="16" x="9%" y="78%"  fill="#17E268" opacity="0.75"/>
+  <image href="stairs.png" width="16" height="16" x="9%" y="86%"  fill="#17E268" opacity="0.75"/>
+  <image href="stats.png" width="100" height="100" x="13%" y="12%"  fill="#17E268" opacity="0.75"/>
+  
+  
   
 </svg>

@@ -88,3 +88,14 @@
   fill: #17E268;
   opacity: 0.75;
 }
+
+#battery {
+  font-size: 32;
+  font-family: Tungsten;
+  text-length: 36;
+  text-anchor: end;
+  x: 40%;
+  y: 55%;
+  fill: #01270E;
+  opacity: 0.75;
+}

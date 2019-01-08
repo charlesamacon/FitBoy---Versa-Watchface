@@ -11,6 +11,7 @@ import { goals } from "user-activity";
 import { today } from "user-activity";
 
 // Update the clock every minute
+// We could do this in seconds, but there's really no need.
 clock.granularity = "minutes";
 
 // Get a handle on the <text> element
@@ -27,13 +28,21 @@ const activeProgressBar  = document.getElementById("activeProgressBar");
 const distProgressBar = document.getElementById("distProgressBar");
 const stairsProgressBar = document.getElementById("stairsProgressBar");
 const batteryBar = document.getElementById("batteryBar");
+const heartIcon = document.getElementById("heartIcon");
+const batteryText = document.getElementById("battery");
 
 // Get heart rate from watch
 const hrm = new HeartRateSensor();
 
 hrm.onreading = function() {
   hrate.text = `${hrm.heartRate}`; 
-  //hrate.text = '666';
+  
+  if (hrm.heartRate > 93) {
+    heartIcon.style.fill = "#FF0000";
+  }
+  else{
+    heartIcon.style.fill = "#17E268";
+  }
 }
 
 hrm.start();
@@ -138,18 +147,26 @@ clock.ontick = (evt) => {
   let batteryValue = battery.chargeLevel; 
   
   const calGoalPercent  = Math.min(100, Math.round(calsValue / goals.calories * 100));
-  calProgressBar.width = Math.round(100 * calGoalPercent / 100);
+  calProgressBar.width = Math.round(215 * calGoalPercent / 100);
   
   const amGoalPercent  = Math.min(100, Math.round(amValue / goals.activeMinutes * 100));
-  activeProgressBar.width = Math.round(100 * amGoalPercent / 100);
+  activeProgressBar.width = Math.round(215 * amGoalPercent / 100);
   
   const distGoalPercent  = Math.min(100, Math.round(distValue / goals.distance * 100));
-  distProgressBar.width = Math.round(100 * distGoalPercent / 100);
+  distProgressBar.width = Math.round(215 * distGoalPercent / 100);
   
   const elevGoalPercent  = Math.min(100, Math.round(elevValue / goals.elevationGain * 100));
-  stairsProgressBar.width = Math.round(100 * elevGoalPercent / 100);
+  stairsProgressBar.width = Math.round(215 * elevGoalPercent / 100);
   
-  //const batteryPercent  = Math.min(100, Math.round(batteryValue / goals.elevationGain * 100));
-  console.log(batteryValue);
   batteryBar.width = batteryValue;
+  //batteryBar.width = 65;
+  
+  if (batteryBar.width < 51){
+    batteryBar.style.fill = "#FFFF00";  // Yellow if below (or at) 50%
+  }
+  if (batteryBar.width < 26){
+    batteryBar.style.fill = "#FF0000";  // Red if below (or at) 25%
+  }
+  
+  batteryText.text = `${batteryBar.width}/100`;
 }
