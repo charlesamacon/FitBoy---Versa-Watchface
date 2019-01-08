@@ -1,0 +1,90 @@
+.background {
+  viewport-fill: #021E0D;
+}
+
+#myLabel {
+  font-size: 80;
+  font-family: System-Bold;
+  text-length: 32;
+  text-anchor: middle;
+  x: 75%;
+  y: 25%;
+  fill: white;
+}
+
+#clockTime {
+  font-size: 80;
+  font-family: Tungsten;
+  text-length: 32;
+  text-anchor: middle;
+  x: 75%;
+  y: 37%;
+  fill: #17E268;
+  opacity: 0.75;
+}
+
+#todayMonth {
+  font-size: 30;
+  font-family: Tungsten;
+  text-length: 64;
+  text-anchor: end;
+  x: 80%;
+  y: 54%;
+  fill: #17E268;
+  opacity: 0.75;
+}
+
+#todayDay {
+  font-size: 20;
+  font-family: Tungsten;
+  text-length: 64;
+  text-anchor: end;
+  x: 80%;
+  y: 46%;
+  fill: #17E268;
+  opacity: 0.75;
+}
+
+#todayDate {
+   font-size: 64;
+  font-family: Tungsten;
+  text-length: 32;
+  text-anchor: end;
+  x: 93%;
+  y: 56%;
+  fill: #17E268;
+  opacity: 0.75;
+}
+
+#steps {
+  font-size: 20;
+  font-family: Tungsten;
+  text-length: 6;
+  text-anchor: end;
+  x: 93%;
+  y: 13%;
+  fill: #17E268;
+  opacity: 0.75;
+}
+
+#hrate {
+  font-size: 20;
+  font-family: Tungsten;
+  text-length: 6;
+  text-anchor: end;
+  x: 70%;
+  y: 13%;
+  fill: #17E268;
+  opacity: 0.75;
+}
+
+#progress {
+  font-size: 20;
+  font-family: Tungsten;
+  text-length: 36;
+  text-anchor: middle;
+  x: 28%;
+  y: 8%;
+  fill: #17E268;
+  opacity: 0.75;
+}

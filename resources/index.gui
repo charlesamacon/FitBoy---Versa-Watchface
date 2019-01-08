@@ -1,0 +1,82 @@
+<svg class="background">
+  <text id="myLabel" />
+  
+  <rect x="0%" y="2%" width="100%" height="2%" fill="#01270E"  />
+  <rect x="0%" y="6%" width="100%" height="2%" fill="#01270E" />
+  <rect x="0%" y="10%" width="100%" height="2%" fill="#01270E" />
+  <rect x="0%" y="14%" width="100%" height="2%" fill="#01270E" />
+  <rect x="0%" y="18%" width="100%" height="2%" fill="#01270E" />
+  <rect x="0%" y="22%" width="100%" height="2%" fill="#01270E" />
+  <rect x="0%" y="26%" width="100%" height="2%" fill="#01270E" />
+  <rect x="0%" y="30%" width="100%" height="2%" fill="#01270E" />
+  <rect x="0%" y="34%" width="100%" height="2%" fill="#01270E" />
+  <rect x="0%" y="38%" width="100%" height="2%" fill="#01270E" />
+  <rect x="0%" y="42%" width="100%" height="2%" fill="#01270E" />
+  <rect x="0%" y="46%" width="100%" height="2%" fill="#01270E" />
+  <rect x="0%" y="50%" width="100%" height="2%" fill="#01270E" />
+  <rect x="0%" y="54%" width="100%" height="2%" fill="#01270E" />
+  <rect x="0%" y="58%" width="100%" height="2%" fill="#01270E" />
+  <rect x="0%" y="62%" width="100%" height="2%" fill="#01270E" />
+  <rect x="0%" y="66%" width="100%" height="2%" fill="#01270E" />
+  <rect x="0%" y="70%" width="100%" height="2%" fill="#01270E" />
+  <rect x="0%" y="74%" width="100%" height="2%" fill="#01270E" />
+  <rect x="0%" y="78%" width="100%" height="2%" fill="#01270E" />
+  <rect x="0%" y="82%" width="100%" height="2%" fill="#01270E" />
+  <rect x="0%" y="86%" width="100%" height="2%" fill="#01270E" />
+  <rect x="0%" y="90%" width="100%" height="2%" fill="#01270E" />
+  <rect x="0%" y="94%" width="100%" height="2%" fill="#01270E" />
+  <rect x="0%" y="98%" width="100%" height="2%" fill="#01270E" />
+  
+  <!-- Bottom Border -->
+  <rect x="5%" y="95%" width="2 + 90%" height="2" fill="#17E268" opacity="0.75" />
+  <rect x="5%" y="80%" width="2" height="15%" fill="#17E268" opacity="0.75" />
+  <rect x="95%" y="80%" width="2" height="15%" fill="#17E268" opacity="0.75" />
+  
+  <!-- Top Borders -->
+  <rect x="5%" y="5%" width="10%" height="2" fill="#17E268" opacity="0.75" />
+  <rect x="41%" y="5%" width="12%" height="2" fill="#17E268" opacity="0.75" />
+  <rect x="74%" y="5%" width="2 + 21%" height="2" fill="#17E268" opacity="0.75" />
+  <rect x="55%" y="5%" width="2 + 17%" height="2" fill="#17E268" opacity="0.75" />
+  <rect x="5%" y="5%" width="2" height="10%" fill="#17E268" opacity="0.75" />
+  <rect x="95%" y="5%" width="2" height="10%" fill="#17E268" opacity="0.75" />
+  <rect x="72%" y="5%" width="2" height="10%" fill="#17E268" opacity="0.75" />
+  <rect x="53%" y="5%" width="2" height="10%" fill="#17E268" opacity="0.75" />
+  
+  <rect x="53%" y="20%" width="2" height="70%" fill="#17E268" opacity="0.25" />
+  
+  <!-- Date Border -->
+  <rect x="95%" y="39%" width="2" height="10%" fill="#17E268" opacity="0.75" />
+  <rect x="55%" y="39%" width="40%" height="2" fill="#17E268" opacity="0.75" />
+  
+  <!-- Progress Bars (Unfilled) -->
+  <rect x="60%" y="60%" height="16" width="100" fill="#17E268" opacity="0.2" />
+  <rect x="60%" y="68%" height="16" width="100" fill="#17E268" opacity="0.25" />
+  <rect x="60%" y="76%" height="16" width="100" fill="#17E268" opacity="0.25" />
+  <rect x="60%" y="84%" height="16" width="100" fill="#17E268" opacity="0.25" />
+  <rect x="12%" y="60%" height="32" width="100" fill="#17E268" opacity="0.25" />
+  
+  <!-- Progress Bars (Filled) -->
+  <rect id="calProgressBar" x="60%" y="60%" height="16" fill="#17E268" opacity="0.75" />
+  <rect id="activeProgressBar" x="60%" y="68%" height="16" fill="#17E268" opacity="0.75" />
+  <rect id="distProgressBar" x="60%" y="76%" height="16" fill="#17E268" opacity="0.75" />
+  <rect id="stairsProgressBar" x="60%" y="84%" height="16" fill="#17E268" opacity="0.75" />
+  <rect id="batteryBar" x="12%" y="60%" height="32" fill="#17E268" opacity="0.75" />
+  
+  <!-- Data [DRAW LAST] -->
+  <text id="clockTime" />
+  <text id="progress"  />
+  <text id="todayDay" />
+  <text id="todayMonth" />
+  <text id="todayDate" />
+  <text id="hrate"     />
+  <image href="hrate.png" width="16" height="16" x="56%" y="8%"  fill="#17E268" opacity="0.75"/>
+  <text id="steps"     />
+  <image href="steps.png" width="16" height="16" x="75%" y="8%"  fill="#17E268" opacity="0.75"/>
+  <text id="battery"   />
+  <image href="cals.png" width="16" height="16" x="54%" y="60%"  fill="#17E268" opacity="0.75"/>
+  <image href="active.png" width="16" height="16" x="54%" y="68%"  fill="#17E268" opacity="0.75"/>
+  <image href="dist.png" width="16" height="16" x="54%" y="76%"  fill="#17E268" opacity="0.75"/>
+  <image href="stairs.png" width="16" height="16" x="54%" y="84%"  fill="#17E268" opacity="0.75"/>
+  <image href="stats.png" width="128" height="128" x="8%" y="16%"  fill="#17E268" opacity="0.75"/>
+  
+</svg>
