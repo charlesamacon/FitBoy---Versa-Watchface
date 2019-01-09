@@ -29,6 +29,7 @@ const distProgressBar = document.getElementById("distProgressBar");
 const stairsProgressBar = document.getElementById("stairsProgressBar");
 const batteryBar = document.getElementById("batteryBar");
 const heartIcon = document.getElementById("heartIcon");
+const heartIconBorder = document.getElementById("heartIconBorder");
 const batteryText = document.getElementById("battery");
 
 // Get heart rate from watch
@@ -37,11 +38,17 @@ const hrm = new HeartRateSensor();
 hrm.onreading = function() {
   hrate.text = `${hrm.heartRate}`; 
   
-  if (hrm.heartRate > 93) {
+  if (hrm.heartRate > 131) {
+    heartIconBorder.style.fill = "#FF0000";
     heartIcon.style.fill = "#FF0000";
   }
-  else{
+  else if (hrm.heartRate > 93){
+    heartIconBorder.style.fill = "#17E268";
     heartIcon.style.fill = "#17E268";
+  }
+  else{
+    heartIconBorder.style.fill = "#17E268";
+    heartIcon.style.fill = "#01270E";
   }
 }
 
@@ -72,6 +79,28 @@ clock.ontick = (evt) => {
   let todaydayday = today.getDate();
   //let todaydayday = '31';
   let monthIndex = today.getMonth() + 1;
+  
+  if (monthIndex === 1 && todaydayday === 18){
+    progress.text = 'B    -    D    A    Y';
+  }
+  else if (monthIndex === 2 && todaydayday === 14){
+    progress.text = 'L    O    V    E    U';
+  }
+  else if (monthIndex === 2 && todaydayday === 22){
+    progress.text = 'S    Q    U    I    D';
+  }
+  else if (monthIndex === 10 && todaydayday === 24){
+    progress.text = 'A    D    O    R    E';
+  }
+  else if (monthIndex === 12 && todaydayday === 3){
+    progress.text = 'H    B    B    E    N';
+  }
+  else if (monthIndex === 12 && todaydayday === 25){
+    progress.text = 'X    -    M    A    S';
+  }
+  else {
+    progress.text = 'S    T    A    T    S';
+  }
   
   switch (today.getDay()) {
     case 0:

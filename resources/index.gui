@@ -71,7 +71,9 @@
   <text id="todayMonth" />
   <text id="todayDate" />
   <text id="hrate"     />
-  <image id="heartIcon" href="hrate.png" width="16" height="16" x="56%" y="8%"  fill="#17E268" opacity="0.75"/>
+  <image id="heartIconBorder" href="hrate.png" width="16" height="16" x="56%" y="8%"  fill="#17E268" opacity="0.75"/>
+  <image id="heartIcon" href="hrate.png" width="8" height="8" x="4+56%" y="4+8%"  fill="#FFFFFF" opacity="0.75"/>
+  
   <text id="steps"     />
   <image href="steps.png" width="16" height="16" x="75%" y="8%"  fill="#17E268" opacity="0.75"/>
   <text id="battery"   />
